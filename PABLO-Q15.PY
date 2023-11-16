@@ -24,8 +24,7 @@ while km_litro <= 0:
 regioes = ['sudeste','nordeste','sul','centro','norte']
 preço = [5.00,5.10,5.15,5.20,5.30]
 while regiao not in regioes:
-    regiao = str(input("Qual sua regiao?")).replace(' ','')
-regiao.lower
+    regiao = str(input("Qual sua regiao?")).replace(' ','').lower()
 indice=regioes.index(regiao)
 print(f"quantidade de combustivel necessaria: {distancia/km_litro}L")
 print(f"Custo do combustivo necessario para a viagem: R${(distancia/km_litro)*preço[indice]}")
